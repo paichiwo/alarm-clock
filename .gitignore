@@ -1,3 +1,5 @@
 # Pycharm files
 /venv/
 /.idea/
+# My temp files
+/font_preview.py
