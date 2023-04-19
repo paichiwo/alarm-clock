@@ -23,13 +23,16 @@ def create_window():
     ]
 
     layout = [
+        [psg.VPush()],
         [psg.Push(), psg.Image("close.png", pad=0, enable_events=True, key="-CLOSE-")],
-        [psg.TabGroup([[psg.Tab("Clock", clock_layout, element_justification="center"),
-                       psg.Tab("Alarm", alarm_layout)]])]
+        [psg.TabGroup([[
+            psg.Tab("Clock", clock_layout, element_justification="center"),
+            psg.Tab("Alarm", alarm_layout)
+        ]])]
     ]
 
     return psg.Window(
-        "Alarm Clock", layout, size=(520, 240),
+        "Alarm Clock", layout, size=(500, 200),
         finalize=True,
         no_titlebar=True,
         grab_anywhere=True,
