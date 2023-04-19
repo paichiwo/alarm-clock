@@ -2,6 +2,8 @@ import PySimpleGUI as psg
 import time
 import winsound
 
+# Make LICENSE, README.md, requirements and screenshot
+
 
 def create_window():
     # Create the main window with two tabs: "Clock" and "Alarm"
