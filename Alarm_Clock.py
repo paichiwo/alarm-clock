@@ -1,8 +1,8 @@
+# Alarm Clock application
+
 import PySimpleGUI as psg
 import time
 import winsound
-
-# Make LICENSE, README.md, requirements and screenshot
 
 
 def create_window():
@@ -32,7 +32,7 @@ def create_window():
     ]
 
     return psg.Window(
-        "Alarm Clock", layout, size=(500, 200),
+        "Alarm Clock", layout, size=(500, 225),
         finalize=True,
         no_titlebar=True,
         grab_anywhere=True,
